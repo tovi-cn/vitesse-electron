@@ -53,6 +53,7 @@ if (import.meta.env.DEV) {
         allowFileAccess: true,
       },
     }))
+    .then((name) => console.log(`Added Extension:  ${name}`))
     .catch(e => console.error('Failed install extension:', e));
 }
 

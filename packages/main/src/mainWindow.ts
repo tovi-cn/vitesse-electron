@@ -1,6 +1,6 @@
-import {app,BrowserWindow} from 'electron';
-import {join} from 'path';
-import {URL} from 'url';
+import { app, BrowserWindow } from 'electron';
+import { join } from 'path';
+import { URL } from 'url';
 
 async function createWindow() {
   const browserWindow = new BrowserWindow({
@@ -13,6 +13,20 @@ async function createWindow() {
       preload: join(app.getAppPath(), 'packages/preload/dist/index.cjs'),
     },
   });
+
+  const win = new BrowserWindow({
+    // show: false,
+    webPreferences: {
+      nodeIntegrationInWorker: true,
+      preload: join(app.getAppPath(), 'packages/preload/dist/index.cjs'),
+    },
+  })
+
+  win.loadFile(join(app.getAppPath(), 'extensions/test/index.html'))
+
+  win.on('close', () => {
+    console.log('close')
+  })
 
   /**
    * If you install `show: true` then it can cause issues when trying to close the window.
