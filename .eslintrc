@@ -32,10 +32,10 @@
    * This avoids rare errors in optimized code.
    * @see https://twitter.com/alex_kozack/status/1364210394328408066
    */
-    "semi": [
-      "error",
-      "always"
-    ],
+    // "semi": [
+    //   "error",
+    //   "always"
+    // ],
     /**
      * This will make the history of changes in the hit a little cleaner
      */

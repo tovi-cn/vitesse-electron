@@ -3,7 +3,11 @@
     "baseUrl": ".",
     "module": "esnext",
     "target": "esnext",
-    "lib": ["ESNext", "dom", "dom.iterable"],
+    "lib": [
+      "ESNext",
+      "dom",
+      "dom.iterable"
+    ],
     "strict": true,
     "esModuleInterop": true,
     "incremental": false,
@@ -16,21 +20,21 @@
     "sourceMap": false,
     "isolatedModules": true,
     "forceConsistentCasingInFileNames": true,
-    "types" : [  
+    "types": [
       "vite/client",
       "vue/ref-macros",
       "vite-plugin-pages/client",
-      "vite-plugin-vue-layouts/client"],
+      "vite-plugin-vue-layouts/client"
+    ],
     "paths": {
       "~/*": [
         "./src/*"
       ],
       "#preload": [
         "../preload/src/index"
-      ],
-    },
+      ]
+    }
   },
-
   "include": [
     "src/**/*.vue",
     "src/**/*.ts",
@@ -40,6 +44,6 @@
   ],
   "exclude": [
     "**/*.spec.ts",
-    "**/*.test.ts",
+    "**/*.test.ts"
   ]
 }
