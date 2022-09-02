@@ -1,5 +1,5 @@
 {
-  "name": "core-flow",
+  "name": "xno",
   "private": true,
   "engines": {
     "node": ">=v16.13",
