@@ -1,6 +1,5 @@
 <script lang="ts" setup>
 // syntax highlighting example
-
 </script>
 
 <template>

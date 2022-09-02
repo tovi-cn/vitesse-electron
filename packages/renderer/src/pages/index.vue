@@ -83,17 +83,17 @@ const { t } = useI18n()
 
   <fieldset>
     <legend>Test Vue Reactivity</legend>
-    <reactive-counter />
+    <ReactiveCounter />
   </fieldset>
 
   <fieldset>
     <legend>Test Node.js API</legend>
-    <reactive-hash />
+    <ReactiveHash />
   </fieldset>
 
   <fieldset>
     <legend>Environment</legend>
-    <electron-versions />
+    <ElectronVersions />
   </fieldset>
 
   <p>
