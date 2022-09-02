@@ -1,5 +1,5 @@
 {
-  "name": "vitesse-electron",
+  "name": "core-flow",
   "private": true,
   "engines": {
     "node": ">=v16.13",
